@@ -1,0 +1,6 @@
+@TorneoGalactico.Api_HostAddress = http://localhost:5226
+
+GET {{TorneoGalactico.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

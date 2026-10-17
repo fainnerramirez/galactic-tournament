@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="TorneoGalactico.Api/TorneoGalactico.Api.csproj" />
+  <Project Path="TorneoGalactico.Tests/TorneoGalactico.Tests.csproj" />
+</Solution>
