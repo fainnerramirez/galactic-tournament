@@ -19,7 +19,7 @@ namespace TorneoGalactico.Api.Controllers
         public async Task<ActionResult<SpeciesResponse>> Create(CreateSpeciesRequest request)
         {
             var created = await service.CreateAsync(request);
-            return Created($"/api/species/{created.Id}", created);
+            return Created(string.Empty, created);
         }
     }
 }
