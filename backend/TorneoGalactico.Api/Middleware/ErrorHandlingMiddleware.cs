@@ -15,9 +15,9 @@ namespace TorneoGalactico.Api.Middleware
             {
                 var (status, title) = ex switch
                 {
-                    NotFoundException => (StatusCodes.Status404NotFound, "No encontrado"),
-                    BadRequestException => (StatusCodes.Status400BadRequest, "Solicitud inválida"),
-                    ConflictException => (StatusCodes.Status409Conflict, "Conflicto"),
+                    NotFoundCombatException => (StatusCodes.Status404NotFound, "No encontrado"),
+                    BadRequestCombatException => (StatusCodes.Status400BadRequest, "Solicitud inválida"),
+                    ConflictCombatException => (StatusCodes.Status409Conflict, "Conflicto"),
                     _ => (StatusCodes.Status500InternalServerError, "Error interno")
                 };
 
