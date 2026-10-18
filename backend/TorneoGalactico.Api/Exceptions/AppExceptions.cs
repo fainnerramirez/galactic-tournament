@@ -2,8 +2,8 @@
 {
     public class AppExceptions
     {
-        public class NotFoundException(string message) : Exception(message);
-        public class BadRequestException(string message) : Exception(message);
-        public class ConflictException(string message) : Exception(message);
+        public class NotFoundCombatException(string message) : Exception(message);
+        public class BadRequestCombatException(string message) : Exception(message);
+        public class ConflictCombatException(string message) : Exception(message);
     }
 }
