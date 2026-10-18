@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using TorneoGalactico.Api.Services.SpeciesServices;
 using static TorneoGalactico.Api.DTOs.Dtos;
 
