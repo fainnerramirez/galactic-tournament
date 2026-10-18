@@ -9,8 +9,6 @@ namespace TorneoGalactico.Api.Data.Database
         {
             using var db = connection.onCreate();
 
-            db.Execute("PRAGMA foreign_keys = ON;");
-
             db.Execute("""
                     CREATE TABLE IF NOT EXISTS Species (
                         Id             INTEGER PRIMARY KEY AUTOINCREMENT,

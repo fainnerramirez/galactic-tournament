@@ -15,6 +15,11 @@ namespace TorneoGalactico.Api.Data.Conection
         {
             var connection = new Microsoft.Data.Sqlite.SqliteConnection(_connectionString);
             connection.Open();
+
+            using var cmd = connection.CreateCommand();
+            cmd.CommandText = "PRAGMA foreign_keys = ON;";
+            cmd.ExecuteNonQuery();
+
             return connection;
         }
     }
