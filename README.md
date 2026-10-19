@@ -1,4 +1,4 @@
-# Torneo Galáctico
+# Torneo Galáctico - Morning Value
 
 Aplicación web para gestionar las especies que participan en el Gran Torneo Galáctico. Permite registrar participantes, organizar combates, consultar sus resultados y ver un ranking de victorias.
 
