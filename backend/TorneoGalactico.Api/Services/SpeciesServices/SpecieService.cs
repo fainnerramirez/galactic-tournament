@@ -62,7 +62,7 @@ namespace TorneoGalactico.Api.Services.SpeciesServices
         public async Task<List<int>> GetBySpeciesIdListAsync()
         {
             using var db = conn.onCreate();
-            var ids = await db.QueryAsync<int>("SELECT Id * FROM Species");
+            var ids = await db.QueryAsync<int>("SELECT Id FROM Species");
             return ids.ToList();
         }
     }
