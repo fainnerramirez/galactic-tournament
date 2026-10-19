@@ -6,8 +6,7 @@ import RankingPage from './pages/RankingPage'
 export default function App() {
   return (
     <Container size="md" py="lg">
-      <Title order={1} mb="md">🌌 Torneo Galáctico</Title>
-
+      <Title order={1} mb="md">🌌 Torneo Galáctico - Morning Value</Title>
       <Tabs defaultValue="species" keepMounted={false}>
         <Tabs.List mb="md">
           <Tabs.Tab value="species">Especies</Tabs.Tab>
