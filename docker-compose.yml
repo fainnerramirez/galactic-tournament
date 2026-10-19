@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      ConnectionStrings__Default: "Data Source=/app/data/torneo.db"
+    volumes:
+      - torneo-data:/app/data
+
+volumes:
+  torneo-data:
